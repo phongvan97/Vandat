@@ -14,6 +14,7 @@ if ($result->num_rows > 0) {
                     <option value=""style="font-size: 25px;font-weight: bolder"><h1>Tầng 1</h1></option>
                     <option value=""style="font-size: 25px;font-weight: bolder"><h1>Tầng 2</h1></option>
                     <option value=""style="font-size: 25px;font-weight: bolder"><h1>Rửa Bát</h1></option>
+                    <option value=""style="font-size: 25px;font-weight: bolder"><h1>Thu Ngân</h1></option>
                     <option value=""style="font-size: 25px;font-weight: bolder"><h1>Bếp</h1></option>
                 </select></td>
             <td><a href="#" onclick="DeleteStaffWork(<?php echo $row['Id'] ?>)">Delete</a></td>
