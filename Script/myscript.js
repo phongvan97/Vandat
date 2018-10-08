@@ -66,7 +66,7 @@ function GetListStaffTochoose(dem, dayshiff, idshiff) {
             var kq = http.responseText;
             // alert(kq);
             $("#HasLi" + dem).html(kq);
-            $(".title1").text("Nhân Viên Đăng Ký Ca " + dem);
+            // $(".title1").text("Nhân Viên Đăng Ký Ca " + dem);
             x = dem;
             y = dayshiff;
             z = idshiff;
@@ -112,7 +112,7 @@ function AddDay(id) {
         http.send();
     }
 }
-function AddMonth() {
+function AddWeek() {
     if ($("#DataForAll").val() == "")
         alert("Chưa Nhập Dữ Liệu");
     else {
@@ -124,7 +124,7 @@ function AddMonth() {
                 location.reload();
             }
         }
-        http.open('GET', 'Process/AddMonth.php?name=' + $("#DataForAll").val(), true);
+        http.open('GET', 'Process/AddWeek.php?name=' + $("#DataForAll").val(), true);
         http.send();
     }
 }

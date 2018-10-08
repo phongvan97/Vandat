@@ -90,7 +90,7 @@
 </div>
 <!-- /page header -->
 <?php
-$sql = "SELECT * FROM month ORDER BY Id desc";
+$sql = "SELECT * FROM week ORDER BY Id desc";
 $result = $conn->query($sql);
 ?>
 
@@ -114,11 +114,11 @@ $result = $conn->query($sql);
                             <li class="navigation-header"><span>Main</span> <i class="icon-paragraph-left2" title=""
                                                                                data-original-title="Main pages"></i>
                             </li>
-                            <li class=""><a href="#" class="legitRipple" onclick="AddMonth()"><i class="icon-plus3"></i>
-                                    <span>ADD MONTH</span></a>
+                            <li class=""><a href="#" class="legitRipple" onclick="AddWeek()"><i class="icon-plus3"></i>
+                                    <span>ADD Week</span></a>
                             </li>
                             <li><a href="#" style="text-align: center;font-size: 16px" class="legitRipple"><i class="icon-home4" style="font-size: 20px;"></i>
-                                    <span>Tháng</span></a></li>
+                                    <span> Tuần </span></a></li>
                             <!-- Layout -->
                             <?php
                             if ($result->num_rows > 0) {

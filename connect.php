@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "vandat_db2";
+$dbname = "vandat_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
