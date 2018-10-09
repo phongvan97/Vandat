@@ -25,8 +25,8 @@ function GetShiff(ele, id) {
             // alert(kq);
             GetStaff("#ListStaff1", $("#btnShiff1").attr("value"));
             GetStaff("#ListStaff2", $("#btnShiff2").attr("value"));
-            GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
-            GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
+            // GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
+            // GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
         }
     }
     http.open('GET', 'Process/GetShiff.php?id=' + id, true);
@@ -50,8 +50,8 @@ function DeleteStaffWork(id) {
             var kq = http.responseText;
             GetStaff("#ListStaff1", $("#btnShiff1").attr("value"));
             GetStaff("#ListStaff2", $("#btnShiff2").attr("value"));
-            GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
-            GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
+            // GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
+            // GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
             GetListStaffTochoose(x, y, z);
         }
     }
@@ -78,8 +78,10 @@ function GetListStaffTochoose(dem, dayshiff, idshiff) {
 function ColapseAll() {
     $(".collapse").removeClass("in")
 }
-function AddStaffToShiff(idshiff, Staff) {
+function AddStaffToShiff(idshiff, Staff,dem) {
     // alert(idshiff+" "+Staff);
+    // return;
+    // alert($("#lisPos"+dem).val());
     // return;
     var http = new XMLHttpRequest();
     http.onreadystatechange = function () {
@@ -88,12 +90,12 @@ function AddStaffToShiff(idshiff, Staff) {
             // alert(kq);
             GetStaff("#ListStaff1", $("#btnShiff1").attr("value"));
             GetStaff("#ListStaff2", $("#btnShiff2").attr("value"));
-            GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
-            GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
+            // GetStaff("#ListStaff3", $("#btnShiff3").attr("value"));
+            // GetStaff("#ListStaff4", $("#btnShiff4").attr("value"));
             GetListStaffTochoose(x,y,z);
         }
     }
-    http.open('GET', 'Process/AddStaffToShiff.php?idshiff='+idshiff+"&Staff="+Staff, true);
+    http.open('GET', 'Process/AddStaffToShiff.php?idshiff='+idshiff+"&Staff="+Staff+"&pos="+$("#lisPos"+dem).val(), true);
     http.send();
 }
 function AddDay(id) {

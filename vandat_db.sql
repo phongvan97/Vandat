@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2018 at 04:33 PM
+-- Generation Time: Oct 09, 2018 at 04:50 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -35,6 +35,18 @@ CREATE TABLE `days` (
   `DaysOfWeek` int(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `days`
+--
+
+INSERT INTO `days` (`Id`, `Name`, `Week`, `DaysOfWeek`) VALUES
+(21, NULL, 7, 1),
+(22, NULL, 7, 2),
+(23, NULL, 7, 3),
+(24, NULL, 7, 4),
+(25, NULL, 7, 5),
+(26, NULL, 7, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +70,29 @@ INSERT INTO `daysofweek` (`Id`, `NameDay`) VALUES
 (5, 'Thứ 6'),
 (6, 'Thứ 7'),
 (7, 'Chủ Nhật');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `position`
+--
+
+CREATE TABLE `position` (
+  `Id` int(11) NOT NULL,
+  `Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `position`
+--
+
+INSERT INTO `position` (`Id`, `Name`) VALUES
+(1, 'Runner'),
+(2, 'Tầng 1'),
+(3, 'Tầng 2'),
+(4, 'Rửa Bát'),
+(5, 'Thu Ngân'),
+(6, 'Bếp');
 
 -- --------------------------------------------------------
 
@@ -91,6 +126,26 @@ CREATE TABLE `shiffdaystaff` (
   `Shiff` int(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `shiffdaystaff`
+--
+
+INSERT INTO `shiffdaystaff` (`Id`, `Staff`, `DaysOfWeek`, `Shiff`) VALUES
+(29, 3, 1, 1),
+(30, 3, 2, 1),
+(31, 3, 3, 1),
+(32, 3, 4, 1),
+(33, 3, 5, 1),
+(34, 3, 6, 1),
+(36, 3, 7, 1),
+(37, 3, 1, 2),
+(38, 3, 2, 2),
+(39, 3, 3, 2),
+(40, 3, 4, 2),
+(41, 3, 5, 2),
+(42, 3, 6, 2),
+(43, 3, 7, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -103,6 +158,24 @@ CREATE TABLE `shiffofday` (
   `Day` int(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `shiffofday`
+--
+
+INSERT INTO `shiffofday` (`Id`, `Shiff`, `Day`) VALUES
+(105, 1, 21),
+(106, 2, 21),
+(111, 1, 22),
+(112, 2, 22),
+(117, 1, 23),
+(118, 2, 23),
+(123, 1, 24),
+(124, 2, 24),
+(129, 1, 25),
+(130, 2, 25),
+(135, 1, 26),
+(136, 2, 26);
+
 -- --------------------------------------------------------
 
 --
@@ -114,6 +187,13 @@ CREATE TABLE `staff` (
   `StaffName` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`Id`, `StaffName`) VALUES
+(3, 'dd');
+
 -- --------------------------------------------------------
 
 --
@@ -123,8 +203,18 @@ CREATE TABLE `staff` (
 CREATE TABLE `staffworkshiff` (
   `Id` int(11) NOT NULL,
   `Staff` int(255) DEFAULT NULL,
-  `ShiffWorkIn` int(255) DEFAULT NULL
+  `ShiffWorkIn` int(255) DEFAULT NULL,
+  `Pos` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `staffworkshiff`
+--
+
+INSERT INTO `staffworkshiff` (`Id`, `Staff`, `ShiffWorkIn`, `Pos`) VALUES
+(31, 3, 106, 3),
+(36, 3, 112, 5),
+(37, 3, 111, 4);
 
 -- --------------------------------------------------------
 
@@ -136,6 +226,13 @@ CREATE TABLE `week` (
   `Id` int(11) NOT NULL,
   `Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `week`
+--
+
+INSERT INTO `week` (`Id`, `Name`) VALUES
+(7, 'ssss');
 
 --
 -- Indexes for dumped tables
@@ -153,6 +250,12 @@ ALTER TABLE `days`
 -- Indexes for table `daysofweek`
 --
 ALTER TABLE `daysofweek`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indexes for table `position`
+--
+ALTER TABLE `position`
   ADD PRIMARY KEY (`Id`);
 
 --
@@ -190,7 +293,8 @@ ALTER TABLE `staff`
 ALTER TABLE `staffworkshiff`
   ADD PRIMARY KEY (`Id`),
   ADD KEY `sadd` (`Staff`),
-  ADD KEY `vdsv` (`ShiffWorkIn`);
+  ADD KEY `vdsv` (`ShiffWorkIn`),
+  ADD KEY `Pos` (`Pos`);
 
 --
 -- Indexes for table `week`
@@ -206,13 +310,19 @@ ALTER TABLE `week`
 -- AUTO_INCREMENT for table `days`
 --
 ALTER TABLE `days`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `daysofweek`
 --
 ALTER TABLE `daysofweek`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `position`
+--
+ALTER TABLE `position`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `shiff`
@@ -224,31 +334,31 @@ ALTER TABLE `shiff`
 -- AUTO_INCREMENT for table `shiffdaystaff`
 --
 ALTER TABLE `shiffdaystaff`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `shiffofday`
 --
 ALTER TABLE `shiffofday`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `staffworkshiff`
 --
 ALTER TABLE `staffworkshiff`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `week`
 --
 ALTER TABLE `week`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
@@ -281,6 +391,7 @@ ALTER TABLE `shiffofday`
 --
 ALTER TABLE `staffworkshiff`
   ADD CONSTRAINT `sadd` FOREIGN KEY (`Staff`) REFERENCES `staff` (`Id`),
+  ADD CONSTRAINT `staffworkshiff_ibfk_1` FOREIGN KEY (`Pos`) REFERENCES `position` (`Id`),
   ADD CONSTRAINT `vdsv` FOREIGN KEY (`ShiffWorkIn`) REFERENCES `shiffofday` (`Id`);
 COMMIT;
 

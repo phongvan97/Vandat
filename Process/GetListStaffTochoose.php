@@ -8,9 +8,19 @@ $sql.=" shiffdaystaff.Staff=Staff.Id AND shiffdaystaff.DaysOfWeek=".$day." and s
 $sql.=" and shiffdaystaff.Staff not in (SELECT staffworkshiff.Staff FROM staffworkshiff WHERE staffworkshiff.ShiffWorkIn=".$idshiff.")";
 $result=$conn->query($sql);
 if ($result->num_rows > 0) {
+    ?>
+    <select class="form-control" style="font-size: 22px" id="lisPos<?php echo $dem?>">
+        <option value="1">Runner</option>
+        <option value="2">Tầng 1</option>
+        <option value="3">Tầng 2</option>
+        <option value="4">Rửa Bát</option>
+        <option value="5">Thu Ngân</option>
+        <option value="6">Bếp</option>
+    </select>
+    <?php
     while ($row = $result->fetch_assoc()) {
         ?>
-        <li onclick="AddStaffToShiff(<?php    echo $idshiff;   ?>,<?php    echo $row['Staff'];   ?>)"> <?php    echo $row['StaffName'];   ?></li>
+        <li onclick="AddStaffToShiff(<?php    echo $idshiff;   ?>,<?php    echo $row['Staff'];   ?>,<?php echo $dem?>)"> <?php    echo $row['StaffName'];   ?></li>
 
         <?php
     }
