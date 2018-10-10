@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6667ac48-a6cd-4293-9a48-f6c349be2744" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Process/AddStaffToShiff.php" afterPath="$PROJECT_DIR$/Process/AddStaffToShiff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Process/GetListStaffTochoose.php" afterPath="$PROJECT_DIR$/Process/GetListStaffTochoose.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Process/GetStaffWorkInshiff.php" afterPath="$PROJECT_DIR$/Process/GetStaffWorkInshiff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/myscript.js" afterPath="$PROJECT_DIR$/Script/myscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vandat_db.sql" afterPath="$PROJECT_DIR$/vandat_db.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Process/AddWeek.php" afterPath="$PROJECT_DIR$/Process/AddWeek.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,18 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AddOneStaff.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Process/AddOneStaff.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1538797642103" expanded="true" signature="71:121" ph="INSERT INTO staff... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DeleteDay.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Process/DeleteDay.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,20 +72,7 @@
             <state relative-caret-position="408">
               <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
               <folding>
-                <element signature="n#style#0;n#option#4;n#select#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
                 <marker date="1539013144301" expanded="true" signature="71:156" ph="SELECT staff... staff" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetStatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Process/GetStatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1538561122173" expanded="true" signature="111:199" ph="SELECT * FRO... shiffdaystaff" />
               </folding>
             </state>
           </provider>
@@ -110,18 +81,45 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Script/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="1992">
               <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vandat_db.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+      <file leaf-file-name="AddDay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Process/AddDay.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1539009275913" expanded="true" signature="102:178" ph="INSERT INTO days... " />
+                <marker date="1539009275913" expanded="true" signature="241:348" ph="INSERT into shiffofday... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddWeek.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Process/AddWeek.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <marker date="1539063783857" expanded="true" signature="66:108" ph="INSERT into week... " />
+                <marker date="1539063783857" expanded="true" signature="165:281" ph="INSERT INTO days... " />
+                <marker date="1539063783857" expanded="true" signature="349:455" ph="INSERT INTO shiffofday... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vandat_db.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1128">
+              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -162,6 +160,7 @@
         <option value="$PROJECT_DIR$/Process/GetStaffWorkInshiff.php" />
         <option value="$PROJECT_DIR$/Process/GetListStaffTochoose.php" />
         <option value="$PROJECT_DIR$/Script/myscript.js" />
+        <option value="$PROJECT_DIR$/Process/AddWeek.php" />
       </list>
     </option>
   </component>
@@ -196,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,32 +217,19 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Script" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vandatpr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vandatpr" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Process" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeme.edu.vn" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -344,7 +329,9 @@
       <updated>1538800116959</updated>
       <workItem from="1538928462530" duration="2407000" />
       <workItem from="1539008579986" duration="5435000" />
-      <workItem from="1539053519077" duration="21000" />
+      <workItem from="1539053519077" duration="919000" />
+      <workItem from="1539063569595" duration="810000" />
+      <workItem from="1539175974575" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="fdsf">
       <created>1539009244167</created>
@@ -367,16 +354,24 @@
       <option name="project" value="LOCAL" />
       <updated>1539009393265</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fdsf">
+      <created>1539053555185</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539053555185</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7863000" />
+    <option name="totallyTimeSpent" value="9638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -410,6 +405,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Script/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1992">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddDay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1539009275913" expanded="true" signature="102:178" ph="INSERT INTO days... " />
+            <marker date="1539009275913" expanded="true" signature="241:348" ph="INSERT into shiffofday... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddStaffToShiff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
+          <folding>
+            <marker date="1539012944021" expanded="true" signature="114:198" ph="INSERT INTO staffworkshiff... " />
+            <marker date="1539012944021" expanded="true" signature="114:207" ph="INSERT INTO staffworkshiff... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddWeek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1539063783857" expanded="true" signature="66:108" ph="INSERT into week... " />
+            <marker date="1539063783857" expanded="true" signature="165:281" ph="INSERT INTO days... " />
+            <marker date="1539063783857" expanded="true" signature="349:455" ph="INSERT INTO shiffofday... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Process/AddOneStaff.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -468,7 +513,106 @@
         <state relative-caret-position="408">
           <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
           <folding>
-            <element signature="n#style#0;n#option#4;n#select#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+            <marker date="1539013144301" expanded="true" signature="71:156" ph="SELECT staff... staff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/GetStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538561122173" expanded="true" signature="111:199" ph="SELECT * FRO... shiffdaystaff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1992">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddStaffToShiff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
+          <folding>
+            <marker date="1539012944021" expanded="true" signature="114:198" ph="INSERT INTO staffworkshiff... " />
+            <marker date="1539012944021" expanded="true" signature="114:207" ph="INSERT INTO staffworkshiff... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddOneStaff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538797642103" expanded="true" signature="71:121" ph="INSERT INTO staff... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/DeleteDay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538763573335" expanded="true" signature="62:125" ph="DELETE FROM " />
+            <marker date="1538763573335" expanded="true" signature="138:204" ph="SELECT shiff... shiffofday" />
+            <marker date="1538763573335" expanded="true" signature="234:278" ph="DELETE FROM " />
+            <marker date="1538763573335" expanded="true" signature="311:342" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/DeleteStaffInShiff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538407985614" expanded="true" signature="59:110" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/GetListStaffTochoose.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <marker date="1539013766377" expanded="true" signature="110:192" ph="SELECT DISTI... staff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/GetShiff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <marker date="1539009275926" expanded="true" signature="65:225" ph="SELECT shiff... Shiff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/GetStaffWorkInshiff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
+          <folding>
             <marker date="1539013144301" expanded="true" signature="71:156" ph="SELECT staff... staff" />
           </folding>
         </state>
@@ -608,7 +752,6 @@
         <state relative-caret-position="264">
           <caret line="11" column="78" lean-forward="false" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
           <folding>
-            <element signature="n#style#0;n#option#4;n#select#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
             <marker date="1539013144301" expanded="true" signature="71:156" ph="SELECT staff... staff" />
           </folding>
         </state>
@@ -637,17 +780,6 @@
           <caret line="162" column="41" lean-forward="false" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="41" />
           <folding>
             <marker date="1539009275951" expanded="true" signature="3818:3853" ph="SELECT * FRO... week" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Process/AddDay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1539009275913" expanded="true" signature="102:178" ph="INSERT INTO days... " />
-            <marker date="1539009275913" expanded="true" signature="241:348" ph="INSERT into shiffofday... " />
           </folding>
         </state>
       </provider>
@@ -720,7 +852,6 @@
         <state relative-caret-position="408">
           <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
           <folding>
-            <element signature="n#style#0;n#option#4;n#select#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
             <marker date="1539013144301" expanded="true" signature="71:156" ph="SELECT staff... staff" />
           </folding>
         </state>
@@ -747,19 +878,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Script/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="1992">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vandat_db.sql">
+    <entry file="file://$PROJECT_DIR$/Process/AddDay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1539009275913" expanded="true" signature="102:178" ph="INSERT INTO days... " />
+            <marker date="1539009275913" expanded="true" signature="241:348" ph="INSERT into shiffofday... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Process/AddWeek.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1539063783857" expanded="true" signature="66:108" ph="INSERT into week... " />
+            <marker date="1539063783857" expanded="true" signature="165:281" ph="INSERT INTO days... " />
+            <marker date="1539063783857" expanded="true" signature="349:455" ph="INSERT INTO shiffofday... " />
+          </folding>
         </state>
       </provider>
     </entry>
